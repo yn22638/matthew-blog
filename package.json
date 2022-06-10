@@ -1,0 +1,16 @@
+{
+  "name": "matthew-blog",
+  "version": "1.0.0",
+  "description": "welcome matthew the blog.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "author": "matthew",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "1.0.0-alpha.1"
+  }
+}
