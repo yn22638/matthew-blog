@@ -1,0 +1,44 @@
+Arguments: 
+  /Users/yang/.nvm/versions/node/v14.19.3/bin/node /Users/yang/.nvm/versions/node/v14.19.3/bin/yarn
+
+PATH: 
+  /Users/yang/.nvm/versions/node/v14.19.3/bin:/Users/yang/.nvm/versions/node/v17.7.2/bin:/Users/yang/.nvm/versions/node/v14.19.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/yang/.nvm/versions/node/v14.19.3/bin
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  14.19.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/vitepress: ETIMEDOUT
+      at Timeout._onTimeout (/Users/yang/.nvm/versions/node/v14.19.3/lib/node_modules/yarn/lib/cli.js:141543:19)
+      at listOnTimeout (internal/timers.js:557:17)
+      at processTimers (internal/timers.js:500:7)
+
+npm manifest: 
+  {
+    "name": "matthew-blog",
+    "version": "1.0.0",
+    "description": "welcome matthew the blog.",
+    "main": "index.js",
+    "scripts": {
+      "dev": "vitepress dev docs",
+      "build": "vitepress build docs",
+      "serve": "vitepress serve docs"
+    },
+    "author": "matthew",
+    "license": "ISC",
+    "dependencies": {
+      "vitepress": "^0.22.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
