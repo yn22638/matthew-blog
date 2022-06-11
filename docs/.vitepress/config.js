@@ -1,8 +1,13 @@
+import { nav } from './utils/nav'
 module.exports = {
-  title: '魔晶博客', // 网站标题
+  // 获取每个文件最后一次 git 提交的 UNIX 时间戳(ms)，同时它将以合适的日期格式显示在每一页的底部
+  lastUpdated: true, // string | boolean
+  // 启动页面丝滑滚动
+  smoothScroll: true,
+  title: '魔晶', // 网站标题
   description:
     '魔晶代表有一种魔力深深吸引着每个人，但原来到此网站的所有人都有收货.', //网站描述
-  base: '/matthew-blog/', //  部署时的路径 默认 /  可以使用二级地址 /base/
+  base: '/bat/', //  部署时的路径 默认 /  可以使用二级地址 /base/
   // lang: 'en-US', //语言
   // 打包目录
   dest: './dist',
@@ -13,46 +18,68 @@ module.exports = {
       'link',
       {
         rel: 'icon',
-        href: '/logo.ico', //图片放在public文件夹下
+        href: '/favicon.ico', //图片放在public文件夹下
       },
     ],
   ],
   // 使用插件
-  plugins: [
-    '@vuepress/active-header-links',
-    '@vuepress/back-to-top',
-    '@vuepress/medium-zoom',
-    '@vuepress/nprogress',
-    [
-      '@vuepress/plugin-search',
-      {
-        locales: {
-          '/': {
-            placeholder: 'Search',
-          },
-          '/zh/': {
-            placeholder: '搜索',
-          },
-        },
-      },
-    ],
-  ],
+  // plugins: [
+  //   '@vuepress/active-header-links',
+  //   '@vuepress/back-to-top',
+  //   '@vuepress/medium-zoom',
+  //   '@vuepress/nprogress',
+  //   [
+  //     '@vuepress/plugin-search',
+  //     {
+  //       locales: {
+  //         '/': {
+  //           placeholder: 'Search',
+  //         },
+  //         '/zh/': {
+  //           placeholder: '搜索',
+  //         },
+  //       },
+  //     },
+  //   ],
+  // ],
   // 主题配置
   themeConfig: {
+    logo: '/favicon.ico',
+    // siteTitle: 'My Custom Title',
     // 获取每个文件最后一次 git 提交的 UNIX 时间戳(ms)，同时它将以合适的日期格式显示在每一页的底部
     // lastUpdated: 'Last Updated', // string | boolean
     // 启动页面丝滑滚动
     smoothScroll: true,
     // 导航栏配置
-    nav: [
-      { text: '我的个人网站', link: '' },
-      { text: '掘金', link: '' },
-      { text: 'Github', link: '' },
-    ],
+    nav,
     sidebar: {
-      '/': getSidebar(),
+      // '/guide': getSidebar(),
+      '/front-end': getFrontEndSidebar(),
     },
   },
+}
+
+function getFrontEndSidebar() {
+  return [
+    {
+      text: 'html',
+      // collapsible: true,
+      collapsible: true,
+      items: [
+        { text: '基础', link: '/front-end/html/' },
+        { text: '进阶', link: '/front-end/html/advanced' },
+      ],
+      sidebarDepth: 3,
+    },
+    {
+      text: 'css',
+      collapsible: true,
+      items: [
+        { text: '基础', link: '/front-end/css/' },
+        { text: '进阶', link: '/front-end/css/advanced' },
+      ],
+    },
+  ]
 }
 
 function getSidebar() {

@@ -1,9 +1,9 @@
-// .vitepress/theme/index.js
-import Layout from './Layout.vue'
+import Home from './Home.vue'
+import DefaultTheme from 'vitepress/theme'
 
 export default {
-  Layout,
-
+  ...DefaultTheme,
+  Home,
   // this is a Vue 3 functional component
   NotFound: () => 'custom 404',
 
