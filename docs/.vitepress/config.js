@@ -45,9 +45,8 @@ module.exports = {
   // 主题配置
   themeConfig: {
     logo: '/favicon.ico',
-    // siteTitle: 'My Custom Title',
     // 获取每个文件最后一次 git 提交的 UNIX 时间戳(ms)，同时它将以合适的日期格式显示在每一页的底部
-    // lastUpdated: 'Last Updated', // string | boolean
+    lastUpdated: 'Last Updated', // string | boolean
     // 启动页面丝滑滚动
     smoothScroll: true,
     // 导航栏配置
