@@ -27,7 +27,7 @@ jobs:
       - run: yarn
 
       # 打包构建
-      - run: yarn build
+      - run: yarn docs:build
 
       # 发布到 GitHub Pages
       - name: Deploy
