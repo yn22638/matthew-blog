@@ -1,5 +1,5 @@
 export const nav = [
-  // { text: '我的个人网站', link: '' },
+  { text: '我的个人网站', link: '' },
   {
     text: '前端必备',
     activeMatch: '/front-end/',
