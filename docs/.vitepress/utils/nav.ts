@@ -1,5 +1,8 @@
 export const nav = [
-  { text: '我的个人网站', link: '' },
+  {
+    text: '我的个人网站',
+    link: 'https://yn22638.github.io/slove-err.github.io/#/',
+  },
   {
     text: '前端必备',
     activeMatch: '/front-end/',
