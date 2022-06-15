@@ -7,7 +7,7 @@ module.exports = {
   title: '魔晶', // 网站标题
   description:
     '魔晶代表有一种魔力深深吸引着每个人，但原来到此网站的所有人都有收货.', //网站描述
-  base: '/bat/', //  部署时的路径 默认 /  可以使用二级地址 /base/
+  // base: '/bat/', //  部署时的路径 默认 /  可以使用二级地址 /base/
   // lang: 'en-US', //语言
   // 打包目录
   dest: './dist',
