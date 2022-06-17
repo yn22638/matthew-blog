@@ -29,3 +29,7 @@
   - docs/.vitepress/theme/custom.styl: 用于定义自定义 css 样式。
   - docs/.vitepress/public: 静态资源目录。
   - docs/.vitepress/config.js: 配置文件的入口文件，也可以是 YML 或 toml
+
+- 问题记录
+  - 打包发布以后页面都是404
+  - base二级域名必须是./ 盲猜是githubPages的原因
